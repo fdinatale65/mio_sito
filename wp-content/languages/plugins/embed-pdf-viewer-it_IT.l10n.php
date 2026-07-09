@@ -1,0 +1,2 @@
+<?php
+return ['x-generator'=>'GlotPress/4.0.3','translation-revision-date'=>'2026-02-05 20:47:58+0000','plural-forms'=>'nplurals=2; plural=n != 1;','project-id-version'=>'Plugins - Embed PDF Viewer - Stable (latest release)','language'=>'it','messages'=>['https://github.com/afragen'=>'https://github.com/afragen','Andy Fragen'=>'Andy Fragen','https://github.com/afragen/embed-pdf-viewer'=>'https://github.com/afragen/embed-pdf-viewer','Embed PDF Viewer'=>'Embed PDF Viewer']];

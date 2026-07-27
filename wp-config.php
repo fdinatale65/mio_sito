@@ -94,7 +94,7 @@ define( 'WP_DEBUG', false );
 /* Add any custom values between this line and the "stop editing" line. */
 
 /* define('WO_MAINTENANCE_MODE', false); */
-
+define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] . '/mio_sito');define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/mio_sito');
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */

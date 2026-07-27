@@ -3,13 +3,23 @@ Thums.db
 .vscode/
 .idea/
 node_modules/
+
+# Wordpress files
+
 wp-content/uploads/
 wp-content/upgrade/
 wp-content/cache/
-wp-content/plugins/
+wp-content/plugins/ 
 wp-admin/
 wp-includes/
 /wp-*.php
+
+# Wordpress languages files
+
+wp-content/languages/
+wp-content/languages/plugins/
+wp-content/languages/themes/
+
 /index.php
 /xmlrpc.php
 /readme.html

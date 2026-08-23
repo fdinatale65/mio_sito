@@ -1,28 +1,41 @@
 .DS_Store
-Thums.db
+Thumbs.db
+
 .vscode/
 .idea/
 node_modules/
 
-# Wordpress files
-
+# WordPress
 wp-content/uploads/
 wp-content/upgrade/
 wp-content/cache/
-wp-content/plugins/ 
-wp-admin/
-wp-includes/
-/wp-*.php
-
-# Wordpress languages files
-
 wp-content/languages/
 wp-content/languages/plugins/
 wp-content/languages/themes/
 
+wp-content/plugins/
+
+wp-admin/
+wp-includes/
+
+/wp-*.php
 /index.php
 /xmlrpc.php
 /readme.html
 /licenza.html
+
 !wp-config.php
 !.gitignore
+
+# Temi di sistema
+wp-content/themes/astra/
+wp-content/themes/twentytwentythree/
+wp-content/themes/twentytwentyfour/
+wp-content/themes/twentytwentyfive/
+
+# Mantieni il tema child
+!wp-content/themes/astra-fdn/
+!wp-content/themes/astra-fdn/**
+
+# In futuro, se svilupperai un plugin tuo:
+#!wp-content/plugins/nome-plugin/

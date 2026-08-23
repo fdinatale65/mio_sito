@@ -1,6 +1,31 @@
-# Elementor Templates Backup
+# Elementor Backups
 
-Questa directory contiene i template Elementor esportati dal sito Portfolio FDN.
+| Campo | Valore |
+|--------|--------|
+| **Document ID** | FDN-WEB-BKP-003 |
+| **Titolo** | Elementor Backups |
+| **File** | README.md |
+| **Versione** | 1.1 |
+| **Stato** | Active |
+| **Autore** | Filippo Tindari Maria Di Natale |
+| **Repository** | mio_sito |
+| **Ultimo aggiornamento** | 23/08/2026 |
+
+---
+
+# Scopo
+
+Questa directory contiene tutte le esportazioni generate da Elementor.
+
+Comprende:
+
+- Pages
+- Templates
+- Globals
+
+Ogni esportazione consente il ripristino di una parte del progetto senza dover ricostruire manualmente il layout.
+
+---
 
 ## Struttura
 

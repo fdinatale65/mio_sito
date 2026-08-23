@@ -1,2 +1,46 @@
-# Auto detect text files and perform LF normalization
+# Normalize line endings
 * text=auto
+
+# PHP
+*.php text
+
+# CSS
+*.css text
+
+# JavaScript
+*.js text
+
+# Markdown
+*.md text
+
+# JSON
+*.json text
+
+# YAML
+*.yml text
+*.yaml text
+
+# XML
+*.xml text
+
+# SQL
+*.sql text
+
+# PowerShell
+*.ps1 text
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+
+# SVG
+*.svg text
+
+# Fonts
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary

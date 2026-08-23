@@ -1,14 +1,26 @@
 # Changelog
 
-## 0.1.0
+Tutte le modifiche rilevanti di questo progetto saranno documentate in questo file.
 
-- Repository creato
-- Tema child Astra
-- GitHub configurato
+---
 
-## 0.2.0
+## [0.1.0] - 2026-08-23
 
-- Nuova Home
-- Hero Section
+### Added
 
-...
+- Initial repository structure
+- Project README
+- CHANGELOG
+- MIT License
+- .editorconfig
+- .gitattributes
+- Documentation architecture
+- Repository standards
+- Development workflow
+- Backup organization
+- Tool Suite structure
+- Documentation index
+- Roadmap
+- Repository architecture document
+- Child Theme foundation
+- GitHub repository configuration

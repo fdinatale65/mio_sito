@@ -5,11 +5,11 @@
 | **Document ID** | ARCH-001 |
 | **Titolo** | Repository Architecture |
 | **File** | ARCH-001_Repository_Architecture.md |
-| **Versione** | 1.0.0 |
+| **Versione** | 1.1.0 |
 | **Stato** | Active |
 | **Autore** | Filippo Tindari Maria Di Natale |
 | **Repository** | FDN Portfolio |
-| **Ultimo aggiornamento** | 23/08/2026 |
+| **Ultimo aggiornamento** | 21/09/2026 |
 
 ---
 
@@ -137,11 +137,19 @@ Contiene esclusivamente backup esportabili.
 
 Comprende:
 
-- Elementor
-- Database
-- Customizzazioni
-- Release
+```
+backups/
 
+├── customizations/
+├── database/
+│   ├── current/
+│   └── archive/
+├── elementor/
+│   ├── globals/
+│   ├── pages/
+│   └── templates/
+└── releases/
+```
 ---
 
 ## docs/
@@ -183,18 +191,31 @@ Rappresenta l'unica area nella quale viene scritto codice personalizzato.
 
 ---
 
+## 5.1 Backup Strategy
+
+La filosofia dei backup è cosi impostata
+
+- SQL prima delle milestone
+- Export Elementor
+- Git come versionamento del codice
+- Backup esterni completi
+- Convenzione dei nomi
+
 # 6. Workflow di Sviluppo
 
 Ogni nuova funzionalità segue il seguente processo.
 
 1. Analisi
 2. Documentazione
-3. Implementazione
-4. Test
-5. Commit Git
-6. Aggiornamento CHANGELOG
-7. Aggiornamento Roadmap
-8. Backup se necessario
+3. Backup Baseline
+4. Implementazione
+5. Verifica
+6. Commit Git
+7. Push
+8. Aggiornamento CHANGELOG
+9. Aggiornamento Roadmap
+10. Snapshot Elementor
+11. Snapshot Database
 
 ---
 
@@ -229,6 +250,17 @@ Tutta la documentazione utilizza Markdown.
 
 ---
 
+## 8.1 Backup Naming Convention
+
+```
+portfolio-db-v1.0-2026-09-21.sql.gz
+
+portfolio-kit-v1.0-2026-09-21.zip
+
+home-v1.0-2026-09-21.json
+```
+---
+
 # 9. Evoluzione dell'Architettura
 
 L'architettura del repository è progettata per crescere insieme al progetto.
@@ -246,6 +278,7 @@ Ogni modifica strutturale dovrà essere documentata tramite una nuova revisione 
 - DEVELOPMENT_WORKFLOW.md
 - ROADMAP.md
 - DOCUMENTATION_INDEX.md
+- ARCH-002 Portfolio Information Architecture
 
 ---
 
@@ -254,3 +287,4 @@ Ogni modifica strutturale dovrà essere documentata tramite una nuova revisione 
 | Versione | Data | Descrizione |
 |----------|------|-------------|
 | 1.0.0 | 23/08/2026 | Prima emissione del documento. |
+| 1.1.0 | 21/09/2026 | Aggiornata la strategia dei backup, workflow e convenzioni di versionamento. |

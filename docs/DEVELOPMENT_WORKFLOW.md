@@ -1,35 +1,51 @@
 # Development Workflow
 
 | Campo | Valore |
-|--------|--------|
+|--------|---------|
 | **Document ID** | FDN-WEB-WF-001 |
 | **Titolo** | Development Workflow |
 | **File** | DEVELOPMENT_WORKFLOW.md |
-| **Versione** | 1.0 |
+| **Versione** | 2.0 |
 | **Stato** | Active |
 | **Autore** | Filippo Tindari Maria Di Natale |
 | **Repository** | mio_sito |
-| **Ultimo aggiornamento** | 23/08/2026 |
+| **Ultimo aggiornamento** | 22/09/2026 |
 
 ---
 
 # Scopo
 
-Questo documento descrive il workflow di sviluppo adottato per il progetto **FDN Portfolio Website**.
+Questo documento descrive il workflow di sviluppo adottato per il progetto **FDN Portfolio**.
 
-L'obiettivo è garantire uno sviluppo ordinato, tracciabile e facilmente manutenibile.
+L'obiettivo è garantire uno sviluppo ordinato, documentato, tracciabile e facilmente manutenibile durante tutto il ciclo di vita del progetto.
 
 ---
 
 # Ambiente di sviluppo
 
-## Sistema operativo
+## Sistema Operativo
 
 Windows 11
+
+---
 
 ## Web Server
 
 XAMPP
+
+---
+
+## CMS
+
+WordPress
+
+---
+
+## Tema
+
+Astra Child (`astra-fdn`)
+
+---
 
 ## Linguaggi
 
@@ -38,23 +54,19 @@ XAMPP
 - CSS3
 - JavaScript
 
-## CMS
-
-WordPress
-
-## Tema
-
-Astra Child (astra-fdn)
+---
 
 ## IDE
 
 Visual Studio Code
 
+---
+
 ## Versionamento
 
 Git
 
-Repository remoto:
+Repository remoto
 
 GitHub
 
@@ -66,87 +78,125 @@ Ogni nuova funzionalità segue il seguente processo.
 
 ## 1. Analisi
 
-- raccolta requisiti
-- definizione obiettivi
-- studio soluzione
+- raccolta dei requisiti;
+- definizione degli obiettivi;
+- analisi della soluzione.
 
 ---
 
 ## 2. Progettazione
 
-Produzione della documentazione:
+Aggiornamento della documentazione tecnica.
+
+Quando necessario dovranno essere aggiornati:
 
 - Architecture
 - Components
+- UX
 - Design
+- SEO
 - Roadmap
 
 ---
 
-## 3. Implementazione
+## 3. Backup
 
-Sviluppo del codice.
+Prima di modifiche significative dovranno essere eseguiti:
+
+- backup del database MySQL;
+- esportazione dei template Elementor;
+- backup delle personalizzazioni;
+- verifica dello stato del repository Git.
+
+---
+
+## 4. Implementazione
+
+Sviluppo della funzionalità.
 
 Principi adottati:
 
-- codice pulito
-- riutilizzabilità
-- modularità
-- compatibilità WordPress
+- codice pulito;
+- modularità;
+- riutilizzabilità;
+- compatibilità WordPress;
+- compatibilità Elementor.
 
 ---
 
-## 4. Test
+## 5. Test
 
 Verifica di:
 
-- funzionalità
-- responsive
-- compatibilità browser
-- prestazioni
-- accessibilità
+- funzionalità;
+- responsive;
+- accessibilità;
+- compatibilità browser;
+- prestazioni;
+- SEO tecnica.
 
 ---
 
-## 5. Git
+## 6. Aggiornamento della documentazione
 
-Ogni modifica significativa deve essere:
+Ogni modifica significativa dovrà aggiornare la relativa documentazione presente nella cartella `docs`.
 
-- verificata
-- documentata
-- committata
+La documentazione rappresenta il riferimento ufficiale del progetto.
 
-Formato commit:
+---
 
+## 7. Git
+
+Prima del commit verificare:
+
+- `git status`;
+- documentazione aggiornata;
+- backup completati (quando necessari);
+- test completati.
+
+Formato commit
+
+```text
+docs: ...
+
+feat: ...
+
+fix: ...
+
+style: ...
+
+refactor: ...
+
+chore: ...
 ```
-type: descrizione
-```
 
-Esempi:
+Esempi
 
-```
-feat: add hero section
+```text
+docs: finalize foundation documentation
 
-fix: improve responsive menu
+feat: implement hero section
 
-docs: update architecture documentation
+fix: improve mobile navigation
 
-style: improve typography
+style: refine typography
+
+refactor: simplify hero layout
+
+chore: update project dependencies
 ```
 
 ---
 
-## 6. Push
+## 8. Push
 
-Dopo ogni commit stabile:
+Dopo ogni commit stabile.
 
-- Push su GitHub
+```text
+git push
+```
 
----
-
-## 7. Documentazione
-
-Ogni modifica importante deve aggiornare almeno uno dei documenti presenti nella cartella docs.
+Il repository remoto dovrà rappresentare sempre uno stato consistente del progetto.
 
 ---
 
@@ -156,23 +206,31 @@ Ogni modifica importante deve aggiornare almeno uno dei documenti presenti nella
 
 Tutte le personalizzazioni devono essere sviluppate esclusivamente nel tema child.
 
-Il tema Astra originale non deve essere modificato.
+Il tema Astra originale non dovrà mai essere modificato.
 
 ---
 
 ## Componenti
 
-Ogni componente deve essere:
+Ogni componente dovrà essere:
 
-- riutilizzabile
-- documentato
-- facilmente manutenibile
+- documentato;
+- riutilizzabile;
+- responsive;
+- accessibile;
+- coerente con il Design System.
 
 ---
 
 ## Naming
 
-Utilizzare nomi chiari e descrittivi.
+Utilizzare nomi chiari e descrittivi per:
+
+- file;
+- immagini;
+- cartelle;
+- componenti;
+- documenti.
 
 ---
 
@@ -180,20 +238,39 @@ Utilizzare nomi chiari e descrittivi.
 
 Realizzare un portfolio professionale che rappresenti:
 
-- competenze tecniche
-- esperienza professionale
-- portfolio lavori
-- blog tecnico
-- curriculum
-- contatti
+- competenze tecniche;
+- esperienza professionale;
+- portfolio progetti;
+- blog tecnico;
+- Knowledge Base;
+- curriculum;
+- contatti.
+
+---
+
+# Fase corrente
+
+```
+Foundation Documentation
+
+Completed
+```
+
+---
+
+# Prossima fase
+
+```
+Home Page Implementation
+```
 
 ---
 
 # Roadmap
 
-Le attività pianificate sono descritte nella cartella:
+Le milestone e la pianificazione sono documentate nella cartella:
 
-```
+```text
 docs/Roadmap
 ```
 
@@ -205,4 +282,8 @@ docs/Roadmap
 
 **Repository:** Active
 
-**Sviluppo:** In corso
+**Documentazione:** Foundation Completed
+
+**Sviluppo:** Home Page Implementation (Next Phase)
+
+**Versionamento:** Git + GitHub
